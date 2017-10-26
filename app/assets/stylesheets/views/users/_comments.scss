@@ -1,0 +1,70 @@
+.answer-comments {
+	margin-left: 20px;
+	background: lighten(#eee, 3%);
+
+  .answer-comment {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    font-size: 16px;
+    padding: 12px;
+    border-bottom-left-radius: $margin / 4;
+    border-bottom-right-radius: $margin / 4;
+  }
+
+  .comment-info {
+    color: $p-gray;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .comment-controls {
+    a {
+      text-decoration: none;
+      font-style: normal;
+      background: $p-red;
+      color: $p-white;
+      margin-left: 5px;
+      padding: 3px;
+      border-radius: 3px;
+
+      &:hover, &:active {
+        background: lighten($p-red, 10%);
+      }
+    }
+  }
+
+  .comment-body, textarea {
+    font-size: 16px;
+  }
+
+  .comment-body {
+    display: inline;
+  }
+
+  #save, #cancel, #form-comment {
+    display: none;
+  }
+
+  .reply-btn {
+    display: block;
+  }
+
+  &.editing {
+    #save, #cancel, #form-comment {
+      display: block;
+    }
+    #edit, .comment-body
+     {
+      display: none;
+    }
+  }
+
+  form {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+
+    & > div {
+      margin: 0;
+    }
+  }
+}

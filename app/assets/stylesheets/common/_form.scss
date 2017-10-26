@@ -1,0 +1,105 @@
+form {
+  @include fontawesome-checkboxes;
+  @include center;
+  border-radius: $margin;
+  padding: $margin * 2;
+  font-size: $font-size-large;
+  top: $margin * 4;
+  width: 520px;
+
+  #question-title-counter, #question-area-counter {
+    margin-top: 15px;
+  }
+
+  div {
+    margin-top: $margin * 2;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input,
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  select,
+  textarea {
+    margin-top: $margin;
+    font-size: $font-size-big;
+    padding: $margin / 2;
+    width: 100%;
+    transition: box-shadow 0.5s;
+    & {
+      outline: none;
+      border: none;
+      @include box_shadow(2);
+    }
+    &:focus {
+      @include box_shadow(3);
+    }
+  }
+
+  textarea {
+    height: 120px
+  }
+
+  input[type=submit] {
+    @include center;
+    @extend .btn;
+    border: none;
+    width: 100%;
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: $margin * 2;
+  }
+
+  .form-header-title {
+    font-size: $font-size-ginormous;
+  }
+
+  .form-header-links {
+    margin-top: $margin * 2;
+    margin-bottom: $margin * 2;
+    font-size: $font-size-base;
+    font-style: italic;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .form-submit-wrapper {
+    input[type=submit] {
+      border: none;
+      color: $p-white;
+      background: $p-green;
+      font-size: $font-size-large;
+
+      &:hover, &:active, &:focus {
+        background: lighten($p-green, 5%);
+      }
+    }
+  }
+
+  .form-rememberable {
+    padding-left: 2px;
+    display: inline-block;
+  }
+
+  .form-footer-links {
+    margin-top: $margin * 2.5;
+    margin-bottom: $margin / 2;
+    text-align: center;
+    clear: both;
+    font-size: $font-size-base;
+    font-style: italic;
+  }
+
+  @include breakpoint(570px) {
+    border-radius: 0;
+    width: 100%;
+  }
+}

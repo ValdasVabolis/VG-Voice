@@ -1,0 +1,13 @@
+<%= form_with(model: Comment.new, url: url, remote: true, class: 'form-reply-answer') do |f| %>
+  <%= f.hidden_field :answer_id, value: answer.id %>
+
+  <div>
+    <%= f.text_area :body, id: 'reply-area'.to_sym %>
+    <p id='reply-area-counter'></p>
+  </div>
+
+  <div class='form-submit-wrapper'>
+    <%= f.submit t(:create) %>
+    <%= link_to(t(:cancel), '#', class: 'cancel-reply') %>
+  </div>
+<% end %>

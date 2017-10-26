@@ -1,0 +1,137 @@
+lt:
+  dont_have_an_account_yet: "Dar neturite paskyros?"
+  sign_up: "Registruotis"
+  sign_in: "Prisijungti"
+  sign_out: "Atsijungti"
+  username: "Paskyros vardas"
+  email: "El. paštas"
+  password: "Slaptažodis"
+  password_confirmation: "Pakartokite Slaptažodį"
+  password_current: "Dabartinis Slaptažodis"
+  remember_me: "Prisiminti mane"
+  forgot_your_password: "Pamiršote savo slaptažodį?"
+  didnt_receive_unlock_instructions: "Negavote naujo prisijungimo instrukcijų?"
+  account: "Mano Paskyra"
+  new_question: "Naujas Klausimas"
+  whats_your_question: "Koks jūsų klausimas?"
+  answers: "Atsakymai"
+  questions: "Klausimai"
+  no_one_answered_yet: "Atrodo, kad niekas dar neatsakė į šį klausimą. Tapkite pirmuoju atsakovu!"
+  showing_answers: "atsakymų"
+  edit: "Redaguoti"
+  delete: "Ištrinti"
+  are_you_sure: "Ar jūs tuo įsitikinęs?"
+  account_settings: "Paskyros Nustatymai"
+  title: "Antraštė"
+  body: "Turinys"
+  create: "Užduoti"
+  save: "Išsaugoti"
+  cancel: "Atšaukti"
+  create_answer: "Pateikti Atsakymą"
+  anonymous_question: "Anonimiškas klausimas"
+  submitted: "Pateikta"
+  by: "uždavė"
+  on_date: ""
+  registered: "Registravosi"
+  ago: "prieš"
+  score: "Taškai"
+  total: "Iš viso"
+  question: "Iš klausimų"
+  answer: "Iš atsakymų"
+  comment: "Iš komentarų"
+  send_a_message: "Siųsti pranešimą"
+  have_an_account: "Jau turite paskyrą?"
+  reply_to_this_answer: "Komentuoti atsakymą"
+  profile: "Profilis"
+  settings: "Nustatymai"
+  characters_minimum: "Simboliai Mažiausiai"
+  no_questions_submitted: "Jūs nepateikėte nei vieno klausimo!"
+  no_answers_submitted: "Jūs nepateikėte nei vieno atsakymo!"
+  about_me: "Apie mane"
+  leave_blank: "palikite tuščią jeigu nenorite pakeisti"
+  update: "Atnaujinti"
+  delete_my_account: "Ištrinti mano paskyrą"
+  avatar: "Avataras"
+  question_created_succesfully: "Sėkmingai pateikėte klausimą!"
+
+  date:
+    abbr_day_names:
+    - Sekm
+    - Pirm
+    - Antr
+    - Treč
+    - Ketv
+    - Penkt
+    - Šešt
+    abbr_month_names:
+    - Saus
+    - Vas
+    - Kovas
+    - Bal
+    - Geg
+    - Birž
+    - Liepa
+    - Rugp
+    - Rugs
+    - Spalis
+    - Lapkr
+    - Gr
+    month_names:
+    - Sausis
+    - Vasaris
+    - Kovas
+    - Balandis
+    - Gegužė
+    - Birželis
+    - Liepa
+    - Rugpjūtis
+    - Rugsėjis
+    - Spalis
+    - Lapkritis
+    - Gruodis
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: apie 1 valandą
+        other: apie %{count} valandų
+      about_x_months:
+        one: apie 1 mėnesį
+        other: apie %{count} mėnesių
+      about_x_years:
+        one: apie 1 metus
+        other: apie %{count} metus
+      almost_x_years:
+        one: beveik 1 metus
+        other: beveik %{count} metus
+      half_a_minute: pusė minutės
+      less_than_x_minutes:
+        one: mažiau negu pusė minutės
+        other: mažiau negu %{count} minutes
+      less_than_x_seconds:
+        one: mažiau negu vieną sekundę
+        other: mažiau negu %{count} sekundžių
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year

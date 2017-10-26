@@ -1,0 +1,11 @@
+<div class='question-author'>
+  <% if question.deleted? %>
+    <%= t(:anonymous_question) %> <%= t(:submitted) %>
+  <% else %>
+    <%= t(:by) %> <%= link_to("#{question.user.username}", user_profile_path(question.user.username)) %>
+  <% end %>
+  <%= t(:on_date) %>
+  <%= question.friendly_date %>
+  at 
+  <%= question.friendly_time %>
+</div>

@@ -1,0 +1,16 @@
+var answer = $('.question-answer[data-id="<%= @answer.id %>"]');
+var form = answer.find('form.form-reply-answer');
+var area = form.find('#reply-area');
+
+if(answer.hasClass('replying')) {
+	answer.removeClass('replying');
+} else {
+  Text.limit({
+    text_selector: area,
+    count_selector: '#reply-area-counter',
+    limit: 1000
+  });
+	answer.addClass('replying');
+	area.focus();
+}
+autosize(area);

@@ -1,0 +1,15 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+}

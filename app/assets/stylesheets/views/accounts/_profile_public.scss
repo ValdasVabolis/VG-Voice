@@ -1,0 +1,60 @@
+.profile-container {
+
+  width: 320px;
+  position: absolute;
+  z-index: 1;
+  height: 512px;
+
+
+  .profile-overview {
+    text-align: center;
+    width: 100%;
+
+    color: $p-white;
+
+    @include breakpoint(750px) {
+      position: absolute;
+      margin-top: 35px;
+    }
+
+    .public-score {
+      margin-top: 20px;
+      .score-total {
+        font-size: $font-size-huge;
+        margin-bottom: 5px;
+        color: $p-green-light;
+      }
+      .score-details {
+        font-size: $font-size-small;
+      }
+    }
+
+    .profile-title {
+      margin-top: 15px;
+      font-size: $font-size-giant;
+    }
+
+    .member-since {
+      margin-top: 5px;
+      font-size: $font-size-small;
+      color: $p-gray-light;
+      font-style: italic;
+    }
+
+    .about-me {
+      margin-top: 20px;
+    }
+
+    .message-wrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .profile-avatar-public {
+    & > img {
+      border-radius: 50%;
+      height: 165px;
+      width: 165px;
+    }
+  }
+}

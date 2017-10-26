@@ -1,0 +1,19 @@
+var question = $('.question-large[data-id="<%= @question.id %>"]');
+var form = question.find('#form-question');
+var body = question.find('.question-body');
+var area = form.find('#question-area');
+var text = body[0].innerText.trim();
+
+if(question.hasClass('editing')) {
+	question.removeClass('editing');
+} else {
+  Text.limit({
+    text_selector: '#question-area',
+    count_selector: '#question-area-counter',
+    limit: 5000
+  });
+	question.addClass('editing');
+	area.val(text);
+}
+autosize(area);
+

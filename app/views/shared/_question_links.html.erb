@@ -1,0 +1,6 @@
+<div class="question-links">
+  <%= link_to "#{t :answers} (#{question.answers.count})",
+    users_question_path(question),
+    remote: true,
+    method: :get %>
+</div>

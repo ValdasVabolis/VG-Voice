@@ -1,0 +1,10 @@
+.main-content {
+  @include center;
+  margin-top: 64px;
+  min-height: 100%;
+  width: 1024px;
+
+  @include breakpoint(1022px) {
+    width: auto;
+  }
+}

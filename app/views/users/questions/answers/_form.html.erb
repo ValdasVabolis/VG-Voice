@@ -1,0 +1,25 @@
+<%= form_with(model: answer, url: url, remote: true, class: 'form_answer') do |f| %>
+  <%= hidden_field_tag :question_id, question.id %>
+  <% if answer.errors.any? %>
+    <div id='error_explanation'>
+      <h2><%= pluralize(answer.errors.count, 'error') %> prohibited this answer from being saved:</h2>
+      <ul>
+      <% answer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='answer-group'>
+    <%= f.text_area :body, id: 'area-answer-new' %>
+    <p id='area-answer-counter-new'></p>
+  </div>
+  <div>
+    <%= f.submit t(:create_answer) %>
+    <% if answer.persisted? %>
+      <%= link_to(t(:cancel), '#', class: 'btn-red cancel-answer') %>
+    <% end %>
+  </div>
+<% end %>
+
+

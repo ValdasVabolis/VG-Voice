@@ -1,0 +1,17 @@
+<%= form_for @inquiry do |f| %>
+  <div class='form-header'>
+    <div class='form-header-title'>
+      Contact us
+    </div>
+    <div>
+      <p>How can we help you?</p>
+    </div>
+  </div>
+  <div>
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+  </div>
+  <div class="form-submit-wrapper">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

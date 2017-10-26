@@ -1,0 +1,27 @@
+<div class='question-answer answer' data-id='<%= answer.id %>'>
+  <% if answer.deleted? %>
+    <div class='answer-author'>
+      Anonymous
+    </div>
+  <% else %>
+    <div class='answer-author'>
+      <%= link_to("#{answer.user.username}", user_profile_path(answer.user.username)) %>
+    </div>
+  <% end %>
+
+  <div class='answer-body'>
+    <%= answer.body %>
+  </div>
+
+  <%= render partial: 'shared/answer_votes', locals: { answer: answer } %>
+  <% if user_signed_in? %>
+    <%= render partial: 'shared/answer_links', locals: { answer: answer } %>
+    <%= render partial: 'shared/answer_reply', locals: { answer: answer, url: users_questions_answers_comment_path } %>
+  <% end %>
+</div>
+
+<div class='answer-comments' data-id='<%= answer.id %>'>
+  <% answer.comments.each do |c| %>
+    <%= render partial: 'shared/comment', locals: { comment: c } %>
+  <% end %>
+</div>

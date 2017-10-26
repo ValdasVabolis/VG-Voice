@@ -1,0 +1,31 @@
+<%= form_with(model: question, url: url, remote: true, id: 'form-question', class: (question.persisted? ? 'question-edit' : 'question-new')) do |f| %>
+  <div class='form-header'>
+    <h2><%= form_header %></h2>
+  </div>
+  <% if question.errors.any? %>
+    <div id='error_explanation'>
+      <h2><%= pluralize(question.errors.count, 'error') %> prohibited this question from being saved:</h2>
+      <ul>
+        <% question.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% unless question.persisted? %>
+    <div class='question-title-group'>
+      <%= f.label t(:title) %>
+      <%= f.text_field :title, id: 'question-title'.to_sym %>
+      <p id='question-title-counter'></p>
+    </div>
+  <% end %>
+  <div class='question-body-group'>
+    <%= f.label t(:body) %>
+    <%= f.text_area :body, id: 'question-area'.to_sym %>
+    <p id='question-area-counter'></p>
+  </div>
+  <div class='form-submit-wrapper'>
+    <%= link_to(t(:cancel), '#', id: 'cancel-question', class: 'btn-red') if question.persisted? %>
+    <%= f.submit question.persisted? ? t(:save) : t(:create) %>
+  </div>
+<% end %>

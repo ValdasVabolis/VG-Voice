@@ -1,0 +1,30 @@
+.btn {
+  background: $p-white;
+  border: 1px solid $p-black;
+  color: $p-black;
+  padding: $margin / 2;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: normal;
+  border-radius: $margin / 2;
+
+  &:hover, &:active, &:focus {
+    background: $p-black;
+    color: $p-white;
+    cursor: pointer;
+  }
+}
+
+.btn-red {
+  color: $p-red;
+}
+
+.btn-green {
+  color: $p-green;
+}
+
+.btn-default {
+  color: $p-gray;
+}

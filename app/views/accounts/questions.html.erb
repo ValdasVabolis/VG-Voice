@@ -1,0 +1,27 @@
+<% @questions.each do |question| %>
+  <div class='question-small' data-id='<%= question.id %>'>
+    <div class='question-actions'>
+      <% unless question.deleted? %>
+        <%= link_to(t(:edit), edit_users_question_path(question)) %>
+        <%= link_to(t(:delete),
+          users_question_path(question),
+          remote: true,
+          method: :delete,
+          data: { confirm: "Are you sure?" }) %>
+      <% end %>
+    </div>
+    <% if question.deleted? %>
+      <h4><%= t(:anonymous_question) %>.</h4>
+    <% end %>
+    <h4><%= link_to("#{question.title}", users_question_path(question)) %></h4>
+  </div>
+<% end %>
+
+<%= will_paginate @questions %>
+
+<% if current_user.questions.empty? %>
+  <h2><%= t(:no_questions_submitted) %></h2>
+<% end %>
+
+
+
