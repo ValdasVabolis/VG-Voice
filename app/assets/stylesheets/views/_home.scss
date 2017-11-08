@@ -65,3 +65,22 @@ body.home {
 body {
   background-color: $p-gray-subtle;
 }
+
+.post-placeholders, .sidebar {
+  float: left;
+}
+
+.post-placeholders {
+  border: 1px solid black;
+  background-image: url(image-path(post-placeholder));
+  background-size: 100% auto;
+  background-position: 0px 6px;
+  height: 1080px;
+  width: 768px
+}
+
+.sidebar {
+  border: 1px solid black;
+  height: 1080px;
+  width: 256px;
+}

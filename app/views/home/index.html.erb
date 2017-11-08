@@ -4,8 +4,16 @@
     <% end %>
 </div>
 
-<% @questions.each do |question| %>
-  <%= render partial: 'shared/question_small', locals: { question: question } %>
-<% end %>
+<div class="post-placeholders">
 
-<%= will_paginate @questions %>
+</div>
+
+<div class="sidebar">
+  <div class="poll-wrapper"></div>
+</div>
+
+<% #@questions.each do |question| %>
+  <% #render partial: 'shared/question_small', locals: { question: question } %>
+<% #end %>
+
+<% #will_paginate @questions %>
