@@ -1,9 +1,7 @@
 <div class='new-question-wrapper'>
-  <% unless current_user.nil? %>
     <%= link_to new_users_question_path do %>
-      <%= fa_icon('pencil') %> <%= t(:new_question) %>
+      <%= fa_icon('pencil') %> Nauja pateiktis
     <% end %>
-  <% end %>
 </div>
 
 <% @questions.each do |question| %>
