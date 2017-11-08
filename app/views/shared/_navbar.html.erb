@@ -1,7 +1,7 @@
 <nav>
-  <%= link_to root_path, class: 'nav-logo-text' do %>
-    Quill<span>up</span>
-  <% end %>
+  <div class="nav-logo">
+    <%= image_tag('vg_logo.png', class: 'nav-logo-image') %>
+  </div>
   <ul>
     <!-- <li> -->
       <% link_to '', 'http://en.quillup.com', class: 'nav-locale-en' %>
@@ -9,7 +9,7 @@
     <!-- <li> -->
       <% link_to '', 'http://lt.quillup.com', class: 'nav-locale-lt' %>
     <!-- </li> -->
-    <% if user_signed_in? %>
+    <!-- <% if user_signed_in? %>
       <li>
         <%= link_to my_account_path do %>
           <%= fa_icon 'user-circle-o' %>
@@ -35,7 +35,6 @@
           <span><%= t :sign_in %></span>
         <% end %>
       </li>
-    <% end %>
+    <% end %> -->
   </ul>
-  <%= fa_icon 'bars 2x' %>
 </nav>
