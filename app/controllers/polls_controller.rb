@@ -3,8 +3,9 @@ class PollsController < ApplicationController
   end
 
   def create
-    @options = params.permit(:poll_options_string).split('\n')
+    @options = params.permit(:poll_options_string)
     puts "HELLO"
+    puts @options
     redirect_to root_path
   end
 

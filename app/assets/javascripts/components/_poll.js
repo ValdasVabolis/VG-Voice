@@ -6,6 +6,10 @@ var Poll = (function() {
         el.parent().toggleClass('ready', el.val().trim() !== '');
       });
 
+      $(document).on('click', '.add-option, .delete-option', function(e) {
+        e.preventDefault();
+      });
+
       $(document).on('click', '.add-option', function() {
         var el = $(this);
         var row = $('<div class="poll-option"></div>');
