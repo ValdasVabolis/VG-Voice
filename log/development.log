@@ -14429,3 +14429,14 @@ Processing by PollsController#new as HTML
 Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 03:35:00 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.2ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (39.4ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
