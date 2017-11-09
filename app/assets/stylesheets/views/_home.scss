@@ -85,6 +85,18 @@ body {
   width: 256px;
 }
 
+.poll-description {
+  .poll-title-text {
+    margin-bottom: $margin * 2;
+  }
+  .poll-body-text {
+    height: 250px;
+  }
+  text-align: center;
+  margin-bottom: $margin * 4;
+}
+
+
 .poll-option {
   .add-option, .delete-option {
     display: none;

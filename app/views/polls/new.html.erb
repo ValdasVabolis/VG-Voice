@@ -3,7 +3,17 @@
     <h2>Nauja apklausa</h2>
   </div>
   <div class="poll-options">
+    <div class="poll-description">
+      <!-- Poll title -->
+      <h4>Apklausos antraštė</h4>
+      <input type="text" class='poll-title-text'></input>
+      <!-- Poll body -->
+      <h4>Apklausos aprašymas</h4>
+      <input type="text" class='poll-body-text'></input>
+    </div>
     <%= f.hidden_field :poll_options_string, id: 'poll-data' %>
+    <!-- Poll data -->
+    <h4 style="text-align: center;">Apklausos duomenys</h4>
     <div class="poll-option">
       <input type="text" class="poll-option-text">
       <button type='button' class='add-option'>+</button>
