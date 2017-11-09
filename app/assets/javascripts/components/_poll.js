@@ -27,7 +27,6 @@ var Poll = (function() {
         var el = $(this);
         el.closest('.poll-option').remove();
       });
-
       $('#poll-form').submit(function(e) {
         e.preventDefault();
         var val = '';
