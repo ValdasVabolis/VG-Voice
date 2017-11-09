@@ -1,4 +1,4 @@
-<%= form_with(model: Poll.new, url: create_poll_path, id: 'poll-form') do |f| %>
+<%= form_with(model: @poll, url: create_poll_path, id: 'poll-form', local: true) do |f| %>
   <div class='form-header'>
     <h2>Nauja apklausa</h2>
   </div>

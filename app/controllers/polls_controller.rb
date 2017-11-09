@@ -1,15 +1,17 @@
 class PollsController < ApplicationController
   def new
+    @poll = Poll.new
   end
 
   def create
-    @options = params.permit(:poll_options_string)
-    puts "HELLO"
-    puts @options
+    options = params[:poll][:poll_options_string].split(/\s+/).map do |opt|
+      PollOption.new(title: opt)
+    end
+
+    poll = Poll.new(poll_options: options)
+
+    poll.save
+
     redirect_to root_path
   end
-
-  private
-
-
 end
