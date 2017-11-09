@@ -4,12 +4,18 @@
     <% end %>
 </div>
 
+
+
 <div class="post-placeholders">
 
 </div>
 
 <div class="sidebar">
-  <div class="poll-wrapper"></div>
+  <div class="nauja-apklausa">
+    <%= link_to 'Nauja apklausa', new_poll_path %>
+  </div>
+  <div class="poll-wrapper">
+  </div>
 </div>
 
 <% #@questions.each do |question| %>

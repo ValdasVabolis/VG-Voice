@@ -84,3 +84,21 @@ body {
   height: 1080px;
   width: 256px;
 }
+
+.poll-option {
+  .add-option, .delete-option {
+    display: none;
+  }
+
+  &.ready {
+    .add-option {
+      display: initial;
+    }
+  }
+
+  &.created {
+    .delete-option {
+      display: initial;
+    }
+  }
+}

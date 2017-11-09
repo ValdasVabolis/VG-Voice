@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929184559) do
+ActiveRecord::Schema.define(version: 20171108233153) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "user_id"
@@ -73,6 +73,22 @@ ActiveRecord::Schema.define(version: 20170929184559) do
     t.integer "message_chain_id"
     t.index ["message_chain_id"], name: "index_messages_on_message_chain_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
+  create_table "poll_options", force: :cascade do |t|
+    t.string "title"
+    t.integer "poll_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["poll_id"], name: "index_poll_options_on_poll_id"
+  end
+
+  create_table "polls", force: :cascade do |t|
+    t.boolean "active"
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "questions", force: :cascade do |t|

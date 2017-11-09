@@ -1,0 +1,17 @@
+<%= form_with(model: Poll.new, url: create_poll_path, id: 'poll-form') do |f| %>
+  <div class='form-header'>
+    <h2>Nauja apklausa</h2>
+  </div>
+  <div class="poll-options">
+    <%= f.hidden_field :poll_options_string, id: 'poll-data' %>
+    <div class="poll-option">
+      <input type="text" class="poll-option-text">
+      <button class='add-option'>+</button>
+      <button class='delete-option'>x</button>
+    </div>
+  </div>
+  <div class='form-submit-wrapper'>
+    <%= f.submit 'Pateikti' %>
+  </div>
+
+<% end %>

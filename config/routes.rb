@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   resources :inquiries, only: [:new, :create]
-
+  get '/nauja_apklausa', to: 'polls#new', as: 'new_poll'
+  match '/create_poll', to: 'polls#create', via: :post, as: 'create_poll'
   # get 'users/question/:id', to: 'users/questions#show'db
   # public profiles
   get 'users/:username', to: 'users#index', as: 'user_profile'
