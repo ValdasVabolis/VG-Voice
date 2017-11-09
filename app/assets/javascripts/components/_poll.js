@@ -1,6 +1,9 @@
 var Poll = (function() {
+  var initialized = false;
   return {
     init: function() {
+      if(initialized) return;
+      initialized = true;
       $(document).on('keyup paste', '.poll-option-text', function() {
         var el = $(this);
         el.parent().toggleClass('ready', el.val().trim() !== '');
@@ -25,26 +28,20 @@ var Poll = (function() {
         el.closest('.poll-option').remove();
       });
 
-      $(document).on('submit', '#poll-form' , function(e) {
-        alert('gay');
+      $('#poll-form').submit(function(e) {
         e.preventDefault();
         var val = '';
+        var data = [];
         $.each($('.poll-option-text'), function(i, o) {
-          console.log("derp");
           var text = $(this).val().trim();
           if(text !== '') {
-            val += text + "\n";
+            data.push(text);
           }
         });
-        $('#poll-data').val(val);
-        $('#poll-form').unbind('submit');
-        //$('#poll-form').submit();
-
+        var string = data.join("\n");
+        $('#poll-data').val(string);
+        $('#poll-form').unbind('submit').submit();
       });
     }
   }
 }());
-
-$(function() {
-  Poll.init();
-});

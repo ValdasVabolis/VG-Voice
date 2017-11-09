@@ -46,4 +46,6 @@ $(document).on('turbolinks:load', function() {
       }
     }
   });
+
+  Poll.init();
 });
