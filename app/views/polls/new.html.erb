@@ -6,10 +6,10 @@
     <div class="poll-description">
       <!-- Poll title -->
       <%= f.label 'Apklausos antraštė' %>
-      <%= f.text_field :title, :class => 'poll-title-text' %>
+      <%= f.text_field :title, class: 'poll-title-text' %>
       <!-- Poll body -->
       <%= f.label 'Apklausos aprašymas' %>
-      <%= f.text_area :body, :class => 'poll-body-text' %>
+      <%= f.text_area :body, class: 'poll-body-text' %>
     </div>
     <%= f.hidden_field :poll_options_string, id: 'poll-data' %>
     <!-- Poll data -->

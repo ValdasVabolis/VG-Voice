@@ -15672,3 +15672,99 @@ Migrating to AddScoreToPollOption (20171109014349)
             WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
 [0m
 **Airbrake: closed
+  [1m[36mPoll Load (1.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 3]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 4]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 6]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 7]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 8]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 9]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 10]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 11]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 7]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "poll_options" WHERE "poll_options"."id" = ?[0m  [["id", 8]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 11]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" IN (2, 3, 4) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" IN (13, 14, 15) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" IN (13, 14, 15) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE (id IN 13,14,15)[0m
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE (id IN 13,14,15)[0m
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE (id IN 13,14,15)[0m
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE (id IN 13,14,15)[0m
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."id" IN (13, 14, 15)[0m
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."id" IN (13, 14, 15)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 13]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 13]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 14]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 15]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/apklausos" for 127.0.0.1 at 2017-11-08 23:17:15 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 12]]
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 16]]
+  Rendered polls/index.html.erb within layouts/application (24.2ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (173.6ms)
+  Rendered shared/_navbar.html.erb (366.3ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 583ms (Views: 571.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-11-08 23:17:16 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2017-11-08 23:17:16 -0600
+Started GET "/assets/vg_logo.png" for 127.0.0.1 at 2017-11-08 23:17:16 -0600
+Started GET "/assets/fontawesome-webfont.woff2" for 127.0.0.1 at 2017-11-08 23:17:16 -0600
+**Airbrake: closed

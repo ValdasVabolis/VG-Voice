@@ -1,4 +1,8 @@
 class PollsController < ApplicationController
+  def index
+    @polls = Poll.all
+  end
+
   def new
     @poll = Poll.new
   end
@@ -7,9 +11,11 @@ class PollsController < ApplicationController
     options = params[:poll][:poll_options_string].split(/\s+/).map do |opt|
       PollOption.new(title: opt)
     end
-    poll_title = params[:title]
-    poll_body = params[:body]
-    poll = Poll.new(poll_options: options)
+
+    poll = Poll.new(poll_options: options) do |p|
+      p.title = params[:poll][:title]
+      p.body = params[:poll][:body]
+    end
 
     poll.save
 

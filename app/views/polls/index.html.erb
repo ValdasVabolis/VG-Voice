@@ -1,0 +1,17 @@
+<div class="polls">
+  <% @polls.each do |poll| %>
+    <div class="poll">
+      <h4 class="poll-title"><%= poll.title %></h4>
+      <div class="poll-body"><%= poll.body %></div>
+
+      <ul class="poll-options">
+        <% poll.poll_options.each do |option| %>
+          <li class="poll-option">
+            <strong class="poll-option-score"><%= option.score %></strong>
+            <span class="poll-option-title"><%= option.title %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
