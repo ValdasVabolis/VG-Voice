@@ -22942,3 +22942,21 @@ Started GET "/assets/application.css" for 127.0.0.1 at 2017-11-09 22:34:40 +0200
 Started GET "/assets/vg_logo.png" for 127.0.0.1 at 2017-11-09 22:34:40 +0200
 Started GET "/assets/post-placeholder" for 127.0.0.1 at 2017-11-09 22:34:40 +0200
 Started GET "/assets/fontawesome-webfont.woff2" for 127.0.0.1 at 2017-11-09 22:34:40 +0200
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:35:37 +0200
+Processing by HomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."active" = ? ORDER BY "polls"."id" ASC LIMIT ?[0m  [["active", "t"], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPollOption Load (0.1ms)[0m  [1m[34mSELECT "poll_options".* FROM "poll_options" WHERE "poll_options"."poll_id" = ?[0m  [["poll_id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (11.2ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2017-11-09 22:35:37 +0200
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-11-09 22:35:37 +0200
+Started GET "/assets/vg_logo.png" for 127.0.0.1 at 2017-11-09 22:35:37 +0200
+Started GET "/assets/fontawesome-webfont.woff2" for 127.0.0.1 at 2017-11-09 22:35:37 +0200
+Started GET "/assets/post-placeholder" for 127.0.0.1 at 2017-11-09 22:35:37 +0200

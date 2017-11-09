@@ -30,4 +30,8 @@ class PollsController < ApplicationController
       puts "Error occured while setting active poll"
     end
   end
+  # TODO
+  def vote
+    poll = Poll.where(active: true).first
+  end
 end

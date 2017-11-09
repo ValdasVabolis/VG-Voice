@@ -20,22 +20,24 @@
   <% unless @active_poll.nil? %>
     <div class='active-poll'>
       <h4>Dabartinė apklausa</h4>
-      <div class='poll-area'>
-        <div class='poll-description'>
-          <h5><%= @active_poll.title %></h5>
-          <p><%= @active_poll.body %></p>
+      <form id='poll-form' action='/vote_poll'>
+        <div class='poll-area'>
+          <div class='poll-description'>
+            <h5><%= @active_poll.title %></h5>
+            <p><%= @active_poll.body %></p>
+          </div>
+          <div class='poll-options'>
+            <ol>
+            <% @active_poll.poll_options.each do |o| %>
+              <li>
+                <input type='radio' name='gender' value='<%= o.title %>'>
+                <%= o.title %>
+              </li>
+            <% end %>
+            </ol>
+          </div>
         </div>
-        <div class='poll-options'>
-          <ol>
-          <% @active_poll.poll_options.each do |o| %>
-            <li>
-              <input type="radio" name="gender" value="">
-              <%= o.title %>
-            </li>
-          <% end %>
-          </ol>
-        </div>
-      </div>
+      </form>
     </div>
   <% end %>
 </div>
