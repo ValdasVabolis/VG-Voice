@@ -25,18 +25,20 @@ var Poll = (function() {
         el.closest('.poll-option').remove();
       });
 
-      $('button[type=submit]').on('click', function(e) {
+      $(document).on('submit', '#poll-form' , function(e) {
+        alert('gay');
         e.preventDefault();
         var val = '';
         $.each($('.poll-option-text'), function(i, o) {
+          console.log("derp");
           var text = $(this).val().trim();
           if(text !== '') {
             val += text + "\n";
           }
         });
-        $('input#poll_data').val(val);
-        $('button[type=submit]').unbind();
-        $('#poll-form').submit();
+        $('#poll-data').val(val);
+        $('#poll-form').unbind('submit');
+        //$('#poll-form').submit();
 
       });
     }

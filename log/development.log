@@ -13992,3 +13992,440 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:18:02 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.5ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (43.9ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:18:08 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bsgXCqPGQFPYx/Cl+53R9k3YK/UiIPdndqpwdnbaagrM6hRZu1ncANgF/kmC8ktEP8TNCxdpzjsEDmSPzGuAzQ==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:18:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.6ms)
+  Rendered shared/_head.html.erb (53.9ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:19:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (111.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 120ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:19:33 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.7ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (59.8ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_alert_notice.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:19:39 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EtGVORbKZckU594bAssmaGAkTezXjKwc9CN+FWD+i6Gw85ZqDlX5mhQl0Pd7pLzaEjirEuLFlUCGh2rs2k9hZg==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:19:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_meta.html.erb (0.6ms)
+  Rendered shared/_head.html.erb (59.6ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:20:22 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (126.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_alert_notice.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:20:23 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (46.6ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:20:27 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/1ViSFZbWPIPojVnG45J7buNp4HGizPaKgGhdCcpZwZ31baOcbxMMj8hjnlAaOVxPLQYDJTFZMaDBJ8ai1PWw==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:20:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (43.5ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:20:56 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (47.2ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:21:04 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JfkoTK4RefLk300Bb0G9+FeICEI41/plHp3cuLd/GjaH2ysfto7loeQdQ+0WLidKJZTuvA2ewzlsOchBDc7w8Q==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:21:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (40.6ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:22:26 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.5ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (45.1ms)
+  Rendered shared/_navbar.html.erb (8.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:22:51 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.3ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (108.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:22:55 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WG9apf3/F6TDRSKrTQPbNsk4eLlYUUmiFDNj7VIusKraiF5Yp1X2reQk5u/EjHZfuxTQLW28sWswF+Ac4j0XIA==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:22:55 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (44.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:22:57 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.5ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (48.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:23:03 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KcxHpLi4tuHJ+P7bWBQfqrMV+yCIzBb/r5iOiKPYgoyL7kT3oCcqssk68Dche4UYwQkd3r2FL6PdPJpxGWloSw==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:23:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (45.6ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:23:14 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (134.9ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 144ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:23:23 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (42.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:23:29 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FUGmyIL3x6rTQi5iiyan2cK6+XsBjQtYdMPbVvnU4ZisgJmeKE+F4wszP0Dozf2FSZDcdnrzORF94yc6/T0DA==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:23:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (44.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:25:02 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (120.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:25:03 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (48.8ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:25:07 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hlUMcfJQ6yvwB0twO/kzTe9nSjUTLeO9ePZkpdYWCFwkdw8i6s93ePDFRZxClqn/nXusyyZk2uEKUnBcbKfimw==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:25:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (51.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:25:26 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (105.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_alert_notice.html.erb (0.3ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:25:27 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (46.2ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:25:31 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9cGET34Vc7y62iS9/paRljW5K7N2V4KhpAsCjOnVx1dX44ccZorv77oYKlGH+QskR6XNTUMeu/3WrxZ1U2QtkA==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:25:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (43.2ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:26:09 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (49.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:26:17 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rLRNAV03ZBjUZueZKLVF6qy0motCGAxwjzeCZlZ1vT4Olk5SRaj4S9Sk6XVR2t9Y3qh8dXdRNSz9k5af7MRX+Q==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:26:17 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (51.8ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:27:29 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_meta.html.erb (0.7ms)
+  Rendered shared/_head.html.erb (120.5ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_alert_notice.html.erb (0.7ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:32:06 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XEFXuei2h1PPmD/37uMD2GU8B8zJBjG9NXmzZSSoMqz+Y1Tq8CkbAM9aMRuXjJlqFyDhMvxPCOFH3aecnhnYaw==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:32:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (39.5ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:32:08 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.3ms)
+  Rendered shared/_meta.html.erb (0.4ms)
+  Rendered shared/_head.html.erb (37.8ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_poll" for 127.0.0.1 at 2017-11-09 02:32:11 +0200
+Processing by PollsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/OxCy1Gy04oV28GvI7mWmICqvZyKNywMKPsonbyQ9/90bJYNdlXHSiVYerF4XzoEB5MCEdh5exCB/hbzEOpGA==", "poll"=>{"poll_options_string"=>""}, "commit"=>"Pateikti"}
+Unpermitted parameters: :utf8, :authenticity_token, :poll, :commit
+Redirected to http://localhost:3000/
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 02:32:11 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (41.5ms)
+  Rendered shared/_navbar.html.erb (12.1ms)
+  Rendered shared/_alert_notice.html.erb (1.1ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nauja_apklausa" for 127.0.0.1 at 2017-11-09 02:32:13 +0200
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (1.3ms)
+  Rendered shared/_meta.html.erb (0.5ms)
+  Rendered shared/_head.html.erb (41.7ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_alert_notice.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
