@@ -19,25 +19,29 @@
   </div>
   <% unless @active_poll.nil? %>
     <div class='active-poll'>
-      <h4>Dabartinė apklausa</h4>
-      <form id='poll-form' action='/vote_poll'>
-        <div class='poll-area'>
-          <div class='poll-description'>
-            <h5><%= @active_poll.title %></h5>
-            <p><%= @active_poll.body %></p>
-          </div>
-          <div class='poll-options'>
-            <ol>
-            <% @active_poll.poll_options.each do |o| %>
-              <li>
-                <input type='radio' name='gender' value='<%= o.title %>'>
-                <%= o.title %>
-              </li>
-            <% end %>
-            </ol>
-          </div>
+      <%= form_with(model: @active_poll, url: vote_poll_path, id: 'poll-form', local: true) do |f| %>
+      <div class='form-header'>
+        <h4>Dabartinė apklausa</h4>
+      </div>
+      <div class="poll-options">
+        <div class="poll-description">
+          <!-- Poll title -->
+          <%= f.label @active_poll.title %>
+          <!-- Poll body -->
+          <%= f.label @active_poll.body %>
         </div>
-      </form>
+        <!-- Poll options -->
+        <% @active_poll.poll_options.each do |o| %>
+           <%= f.radio_button '', o.title %>
+           <%= o.title %>
+        <% end %>
+      </div>
+      <div class='form-submit-wrapper'>
+        <%= f.submit 'Pateikti' %>
+      </div>
+
+<% end %>
+
     </div>
   <% end %>
 </div>

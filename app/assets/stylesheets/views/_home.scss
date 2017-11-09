@@ -83,6 +83,9 @@ body {
   border: 1px solid black;
   height: 1080px;
   width: 256px;
+  form {
+    width: 256px;
+  }
 }
 
 .poll-description {
@@ -100,7 +103,14 @@ body {
   h4 {
     margin-top: $margin * 2;
     margin-bottom: $margin * 2;
+    .poll-form {
+      appearance: none;
+      input {
+        appearance: none;
+      }
+    }
   }
+
   .poll-area {
     border: 1px solid black;
   }
