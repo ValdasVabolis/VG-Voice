@@ -84,7 +84,22 @@ body {
   height: 1080px;
   width: 256px;
   form {
+    .separator {
+      text-align: center;
+      width: 180px;
+    }
     width: 256px;
+    .poll-options {
+      input {
+        width: 15px;
+        height: 15px;
+        box-shadow: none;
+      }
+      span {
+        display: block;
+      }
+    }
+
   }
 }
 
@@ -105,9 +120,6 @@ body {
     margin-bottom: $margin * 2;
     .poll-form {
       appearance: none;
-      input {
-        appearance: none;
-      }
     }
   }
 

@@ -30,10 +30,13 @@
           <!-- Poll body -->
           <%= f.label @active_poll.body %>
         </div>
+        <hr class="separator"></hr>
         <!-- Poll options -->
         <% @active_poll.poll_options.each do |o| %>
-           <%= f.radio_button '', o.title %>
-           <%= o.title %>
+           <span>
+             <%= f.radio_button '', o.title %>
+             <%= o.title %>
+           </span>
         <% end %>
       </div>
       <div class='form-submit-wrapper'>
