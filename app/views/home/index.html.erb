@@ -26,14 +26,14 @@
           <p><%= @active_poll.body %></p>
         </div>
         <div class='poll-options'>
+          <ol>
           <% @active_poll.poll_options.each do |o| %>
-            <ol>
-              <li>
-                <%= o.title %>
-                <%= o.score %>
-              </li>
-            </ol>
+            <li>
+              <input type="radio" name="gender" value="">
+              <%= o.title %>
+            </li>
           <% end %>
+          </ol>
         </div>
       </div>
     </div>
