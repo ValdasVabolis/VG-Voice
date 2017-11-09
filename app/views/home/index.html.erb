@@ -17,6 +17,27 @@
   </div>
   <div class="poll-wrapper">
   </div>
+  <% unless @active_poll.nil? %>
+    <div class='active-poll'>
+      <h4>Dabartinė apklausa</h4>
+      <div class='poll-area'>
+        <div class='poll-description'>
+          <h5><%= @active_poll.title %></h5>
+          <p><%= @active_poll.body %></p>
+        </div>
+        <div class='poll-options'>
+          <% @active_poll.poll_options.each do |o| %>
+            <ol>
+              <li>
+                <%= o.title %>
+                <%= o.score %>
+              </li>
+            </ol>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
 
 <% #@questions.each do |question| %>

@@ -93,6 +93,22 @@ body {
   margin-bottom: $margin * 4;
 }
 
+.poll {
+  border: 1px solid black;
+}
+.active-poll {
+  h4 {
+    margin-top: $margin * 2;
+    margin-bottom: $margin * 2;
+  }
+  .poll-area {
+    border: 1px solid black;
+  }
+  .poll-description {
+    margin-bottom: $margin * 1.5;
+  }
+
+}
 
 .poll-option {
   .add-option, .delete-option {

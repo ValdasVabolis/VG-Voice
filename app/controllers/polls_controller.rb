@@ -18,7 +18,16 @@ class PollsController < ApplicationController
     end
 
     poll.save
-
     redirect_to root_path
+  end
+
+  def activate
+    poll = Poll.where(active: true).first.update_attribute(:active, false)
+
+    if Poll.find(params[:poll_id]).update_attribute(:active, true)
+      puts "Poll succesfully set as active"
+    else
+      puts "Error occured while setting active poll"
+    end
   end
 end

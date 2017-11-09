@@ -1,6 +1,6 @@
 <div class="polls">
   <% @polls.each do |poll| %>
-    <div class="poll">
+    <div class="poll" data-id='<%= poll.id %>'>
       <h4 class="poll-title"><%= poll.title %></h4>
       <div class="poll-body"><%= poll.body %></div>
 
@@ -12,6 +12,8 @@
           </li>
         <% end %>
       </ul>
+      <!-- Button to set poll as active -->
+      <button type='button' id='poll-activate'>Aktyvuoti</button>
     </div>
   <% end %>
 </div>
