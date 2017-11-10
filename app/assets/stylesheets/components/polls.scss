@@ -6,9 +6,10 @@
   .poll {
     border-top: 1px solid $p-black;
     margin: $margin auto;
+    padding: $margin;
     position: relative;
 
-    .poll-set-active {
+    #poll-activate {
       position: absolute;
       right: $margin;
       top: $margin;
@@ -17,7 +18,7 @@
     &.poll-active {
       background: #a7e2ae;
 
-      .poll-set-active {
+      #poll-activate {
         display: none;
       }
     }

@@ -22,7 +22,9 @@ class PollsController < ApplicationController
   end
 
   def activate
-    poll = Poll.where(active: true).first.update_attribute(:active, false)
+    unless (poll = Poll.where(active: true)).blank?
+      poll.first.update_attribute(:active, false)
+    end
 
     if Poll.find(params[:poll_id]).update_attribute(:active, true)
       puts "Poll succesfully set as active"
