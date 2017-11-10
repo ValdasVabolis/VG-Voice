@@ -41,14 +41,12 @@ var Poll = (function() {
       $('#poll-form').submit(function(e) {
         e.preventDefault();
         var val = '';
-        var data = '';
         $.each($('.poll-option-text'), function(i, o) {
           var text = $(o).val().trim();
           if(text !== '') {
-            data += text + "\n";
+            $('#poll-data').val($('#poll-data').val() + text + "\n");
           }
         });
-        $('#poll-data').val(data);
         $('#poll-form').unbind('submit');
         setTimeout(function() {
           $('#poll-form').submit();
