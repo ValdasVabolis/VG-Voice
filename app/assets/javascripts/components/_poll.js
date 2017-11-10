@@ -5,6 +5,7 @@ var Poll = (function() {
       if(initialized) return;
       initialized = true;
 
+      // hide poll if current user (browser) has already placed a vote
       var active_poll_id = $('.active-poll').data('id');
       if(Storage.get('voted-on-poll-' + active_poll_id)) {
         $('#poll-vote-form').remove();
@@ -41,7 +42,11 @@ var Poll = (function() {
       $(document).on('click', '#poll-activate', function() {
         var poll = $(this).closest('.poll');
         // send to PollsController#activate
-        $.post('/activate_poll', { poll_id: poll.attr('data-id')});
+        $.post('/activate_poll', {
+          poll_id: poll.attr('data-id')
+        }).done(function() {
+          window.location.reload();
+        });
       });
 
       $('#poll-form').submit(function(e) {

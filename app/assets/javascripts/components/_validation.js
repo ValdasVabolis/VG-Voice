@@ -4,7 +4,6 @@ var Validation = (function($, m) {
     var el = $(o.selector);
 
     var subscribe = function() {
-      console.log('asdfffff');
       el.on('keyup paste', 'input[type=text], textarea', on_change);
     };
 
