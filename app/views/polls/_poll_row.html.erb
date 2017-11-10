@@ -1,0 +1,15 @@
+<%= poll_row(poll) do %>
+  <h4 class="poll-title"><%= poll.title %></h4>
+  <i class="poll-body"><%= poll.body %></i>
+
+  <ul class="poll-options">
+    <% poll.poll_options.each do |option| %>
+      <li class="poll-option">
+        <strong class="poll-option-score"><%= option.score %></strong> -
+        <span class="poll-option-title"><%= option.title %></span>
+      </li>
+    <% end %>
+  </ul>
+  <!-- Button to set poll as active -->
+  <button type='button' id='poll-activate'>Aktyvuoti</button>
+<% end %>

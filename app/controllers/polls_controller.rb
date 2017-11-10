@@ -32,8 +32,10 @@ class PollsController < ApplicationController
       puts "Error occured while setting active poll"
     end
   end
-  # TODO
-  def vote
-    poll = Poll.where(active: true).first
+
+  def vote_poll
+    @poll = Poll.where(active: true).first
+    option = @poll.poll_options.find_by_title(params[:poll])
+    option.vote!
   end
 end

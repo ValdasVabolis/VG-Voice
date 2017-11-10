@@ -1,0 +1,3 @@
+Storage.set("voted-on-poll-<%= @poll.id %>", true);
+
+$("#poll-vote-form").replaceWith("<%= j render partial: 'poll_row', locals: { poll: @poll } %>");

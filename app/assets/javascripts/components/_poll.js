@@ -4,6 +4,12 @@ var Poll = (function() {
     init: function() {
       if(initialized) return;
       initialized = true;
+
+      var active_poll_id = $('.active-poll').data('id');
+      if(Storage.get('voted-on-poll-' + active_poll_id)) {
+        $('#poll-vote-form').remove();
+      }
+
       $(document).on('keyup paste', '.poll-option-text', function() {
         var el = $(this);
         if(el.parent().hasClass('created')) return;
