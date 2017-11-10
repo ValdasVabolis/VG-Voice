@@ -8,7 +8,7 @@ class PollsController < ApplicationController
   end
 
   def create
-    options = params[:poll][:poll_options_string].split(/\s+/).map do |opt|
+    options = params[:poll][:poll_options_string].strip.split(/\s+/).map do |opt|
       PollOption.new(title: opt)
     end
 

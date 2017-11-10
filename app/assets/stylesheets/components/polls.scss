@@ -1,30 +1,44 @@
-// Place all the styles related to the Polls controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .poll-description {
   margin-bottom: $margin * 4;
 }
 
 .polls {
   .poll {
-    margin-bottom: $margin;
+    border-top: 1px solid $p-black;
+    margin: $margin auto;
+    position: relative;
+
+    .poll-set-active {
+      position: absolute;
+      right: $margin;
+      top: $margin;
+    }
+
+    &.poll-active {
+      background: #a7e2ae;
+
+      .poll-set-active {
+        display: none;
+      }
+    }
   }
 
   .poll-title {
-
+    margin-top: $margin / 2;
   }
 
   .poll-body {
-
+    display: block;
+    font-style: italic;
+    margin-top: $margin / 2;
   }
 
   .poll-options {
-
+    padding: $margin;
   }
 
-  .poll-option {
-
+  .poll-option:not(:last-child) {
+    margin-bottom: $margin / 2;
   }
 
   .poll-option-score {

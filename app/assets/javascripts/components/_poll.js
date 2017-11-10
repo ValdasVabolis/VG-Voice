@@ -35,18 +35,17 @@ var Poll = (function() {
       $('#poll-form').submit(function(e) {
         e.preventDefault();
         var val = '';
-        var data = [];
+        var data = '';
         $.each($('.poll-option-text'), function(i, o) {
           var text = $(o).val().trim();
           if(text !== '') {
-            data.push(text);
+            data += text + "\n";
           }
         });
-        var string = data.join("\n");
-        alert(string)
-        $('#poll-data').val(string);
+        $('#poll-data').val(data);
+        $('#poll-form').unbind('submit');
         setTimeout(function() {
-          $('#poll-form').unbind('submit').submit();
+          $('#poll-form').submit();
         }, 10);
       });
     }
