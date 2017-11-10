@@ -83,6 +83,24 @@ body {
   border: 1px solid black;
   height: 1080px;
   width: 256px;
+  form {
+    .separator {
+      text-align: center;
+      width: 180px;
+    }
+    width: 256px;
+    .poll-options {
+      input {
+        width: 15px;
+        height: 15px;
+        box-shadow: none;
+      }
+      span {
+        display: block;
+      }
+    }
+
+  }
 }
 
 .poll-description {
@@ -93,6 +111,26 @@ body {
   margin-bottom: $margin * 4;
 }
 
+.poll {
+  border: 1px solid black;
+}
+.active-poll {
+  h4 {
+    margin-top: $margin * 2;
+    margin-bottom: $margin * 2;
+    .poll-form {
+      appearance: none;
+    }
+  }
+
+  .poll-area {
+    border: 1px solid black;
+  }
+  .poll-description {
+    margin-bottom: $margin * 1.5;
+  }
+
+}
 
 .poll-option {
   .add-option, .delete-option {

@@ -17,6 +17,36 @@
   </div>
   <div class="poll-wrapper">
   </div>
+  <% unless @active_poll.nil? %>
+    <div class='active-poll'>
+      <%= form_with(model: @active_poll, url: vote_poll_path, id: 'poll-form', local: true) do |f| %>
+      <div class='form-header'>
+        <h4>Dabartinė apklausa</h4>
+      </div>
+      <div class="poll-options">
+        <div class="poll-description">
+          <!-- Poll title -->
+          <%= f.label @active_poll.title %>
+          <!-- Poll body -->
+          <%= f.label @active_poll.body %>
+        </div>
+        <hr class="separator"></hr>
+        <!-- Poll options -->
+        <% @active_poll.poll_options.each do |o| %>
+           <span>
+             <%= f.radio_button '', o.title %>
+             <%= o.title %>
+           </span>
+        <% end %>
+      </div>
+      <div class='form-submit-wrapper'>
+        <%= f.submit 'Pateikti' %>
+      </div>
+
+<% end %>
+
+    </div>
+  <% end %>
 </div>
 
 <% #@questions.each do |question| %>

@@ -32,6 +32,12 @@ var Poll = (function() {
         el.closest('.poll-option').remove();
       });
 
+      $(document).on('click', '#poll-activate', function() {
+        var poll = $(this).closest('.poll');
+        // send to PollsController#activate
+        $.post('/activate_poll', { poll_id: poll.attr('data-id')});
+      });
+
       $('#poll-form').submit(function(e) {
         e.preventDefault();
         var val = '';

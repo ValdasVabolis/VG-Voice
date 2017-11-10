@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get '/nauja_apklausa', to: 'polls#new', as: 'new_poll'
   get '/apklausos', to: 'polls#index', as: 'polls'
   match '/create_poll', to: 'polls#create', via: :post, as: 'create_poll'
-
+  match '/activate_poll', to: 'polls#activate', via: :post, as: 'activate_poll'
+  match '/vote_poll', to: 'polls#vote', via: :post, as: 'vote_poll'
   # get 'users/question/:id', to: 'users/questions#show'db
   # public profiles
   get 'users/:username', to: 'users#index', as: 'user_profile'

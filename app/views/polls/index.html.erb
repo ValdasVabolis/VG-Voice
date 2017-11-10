@@ -2,7 +2,6 @@
 <div class="polls">
   <% @polls.each do |poll| %>
     <%= poll_row(poll) do %>
-      <%= link_to 'Set Active', '#', class: 'poll-set-active' %>
       <h4 class="poll-title"><%= poll.title %></h4>
       <i class="poll-body"><%= poll.body %></i>
 
@@ -14,6 +13,8 @@
           </li>
         <% end %>
       </ul>
+      <!-- Button to set poll as active -->
+      <button type='button' id='poll-activate'>Aktyvuoti</button>
     <% end %>
   <% end %>
 </div>
